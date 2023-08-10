@@ -2,26 +2,17 @@ import 'package:fitness/models/cart.dart';
 import 'package:fitness/models/catalog.dart';
 import 'package:fitness/pages/cart.dart';
 import 'package:fitness/pages/catalog.dart';
-import 'package:fitness/pages/login.dart';
 import 'package:fitness/pages/tabs.dart';
 import 'package:flutter/material.dart';
-import 'package:fitness/common/router.dart';
 import 'package:provider/provider.dart';
-import 'pages/home.dart';
 import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-final GlobalKey<NavigatorState> _rootNavigatorKey =
-GlobalKey<NavigatorState>(debugLabel: 'root');
-final GlobalKey<NavigatorState> _shellNavigatorKey =
-GlobalKey<NavigatorState>(debugLabel: 'shell');
-
 GoRouter router() {
   return GoRouter(
-    navigatorKey: _rootNavigatorKey,
     initialLocation: '/',
     routes: [
       GoRoute(

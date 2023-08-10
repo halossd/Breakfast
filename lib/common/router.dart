@@ -1,7 +1,6 @@
 import 'package:fitness/pages/cart.dart';
 import 'package:fitness/pages/catalog.dart';
 import 'package:fitness/pages/home.dart';
-import 'package:fitness/pages/login.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/tabs.dart';
@@ -10,7 +9,6 @@ import '../pages/tabs.dart';
 final routes = {
   '/': (context) => const Tabs(),
   '/home': (context) => HomePage(),
-  '/login': (context) => const MyLogin(),
   '/catalog': (context, state) => const MyCatalog(),
   '/cart': (context, state) => const MyCart()
 };
