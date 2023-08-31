@@ -1,7 +1,6 @@
 import 'package:fitness/pages/catalog.dart';
 import 'package:fitness/pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Tabs extends StatefulWidget {
   const Tabs({super.key});
